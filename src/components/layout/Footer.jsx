@@ -145,33 +145,38 @@ const Footer = () => {
             © {new Date().getFullYear()} {siteConfig.name}. Tüm hakları saklıdır.
           </p>
 
-          {/* ba2design Credit */}
-          <div className="flex items-center gap-3">
-            <a
-              href={`https://instagram.com/${siteConfig.footerCredit.instagram}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/15 hover:shadow-[0_0_25px_rgba(255,255,255,0.12)]"
-              data-testid="footer-credit-instagram"
-            >
-              <span className="absolute inset-0 rounded-full bg-gradient-to-r from-white/0 via-white/10 to-white/0 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-              <Instagram className="w-4 h-4 relative z-10" />
-              <span className="relative z-10">{siteConfig.footerCredit.text}</span>
-              <ArrowUpRight className="w-3 h-3 relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
+      {/* ba2design Credit */}
+<div className="flex items-center gap-3">
+  <a
+    href={`https://instagram.com/${siteConfig.footerCredit.instagram}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 text-white text-sm font-medium backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20 hover:border-white/40 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]"
+  >
+    <span className="absolute inset-0 rounded-full bg-gradient-to-r from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
 
-            <a
-              href={siteConfig.footerCredit.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-transparent px-4 py-2 text-sm font-medium text-primary-foreground/80 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-foreground/10 hover:text-primary-foreground hover:shadow-[0_0_20px_rgba(255,255,255,0.10)]"
-              data-testid="footer-credit-website"
-            >
-              <Globe className="w-4 h-4" />
-              <span>ba2design.com</span>
-              <ArrowUpRight className="w-3 h-3 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
-          </div>
+    <Instagram className="w-4 h-4 relative z-10" />
+
+    <span className="relative z-10">
+      {siteConfig.footerCredit.text}
+    </span>
+
+    <ArrowUpRight className="w-3 h-3 relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+  </a>
+
+  <a
+    href={siteConfig.footerCredit.website}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group relative inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary-foreground/20 text-primary-foreground/80 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-foreground/10 hover:text-primary-foreground hover:shadow-[0_0_18px_rgba(255,255,255,0.10)]"
+  >
+    <Globe className="w-4 h-4" />
+
+    <span>ba2design.com</span>
+
+    <ArrowUpRight className="w-3 h-3 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+  </a>
+</div>
         </div>
       </div>
     </footer>
